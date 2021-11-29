@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #353535;
+  --clr-accent: #575758;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+}
+
+body {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section_title {
+  margin: auto;
+  font-size: var(--fs-h2);
+}
+
+.section_subtitle {
+  font-size: var(--fs-h3);
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.section_subtitle::after {
+  content: "";
+  display: block;
+  width: 6em;
+  height: 1px;
+  margin: 0.5em auto 0em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+
+/* Home Section */
+
+.section_title--name {
+  margin: auto;
+  font-size: var(--fs-h2);
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  margin: auto;
+  width: 300px;
+}
+
+.link {
+  border-radius: 2px;
+  border-style: solid;
+  background-color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: underline;
+}
+
+.link + .link {
+  margin-left: 4em;
+}
+
+.nav {
+  display: none;
+}
+
+.home_section {
+  background: var(--clr-accent);
+  color: #fff;
+  border-radius: 0.5rem;
+  border-style: solid;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* About Section */
+
+.about_section {
+  margin-top: 10rem;
+  background: var(--clr-accent);
+  color: #fff;
+}
+
+.section_title--about {
+  text-align: center;
+}
+
+/* Projects Section */
+
+.projects_section {
+  margin-top: 10rem;
+  background: var(--clr-accent);
+  color: #fff;
+}
+
+/* Resume Section */
+
+.resume_section {
+  margin-top: 10rem;
+  background: var(--clr-accent);
+  color: #fff;
+}
