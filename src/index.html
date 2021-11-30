@@ -10,13 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="../src/style.css" />
     <title>Collin Winstead's Portfolio</title>
   </head>
   <body>
     <header>
-      Nav is here
       <nav class="nav">
+        <h4 class="nav_name">Collin Winstead</h4>
         <ul class="nav_links">
           <li class="nav_item">
             <a class="nav_link" href="#home">Home</a>
@@ -25,10 +25,10 @@
             <a class="nav_link" href="#about">About Me</a>
           </li>
           <li class="nav_item">
-            <a class="nav_link" href="#resume">Resume</a>
+            <a class="nav_link" href="#projects">Projects</a>
           </li>
           <li class="nav_item">
-            <a class="nav_link" href="#project">Projects</a>
+            <a class="nav_link" href="#resume">Resume</a>
           </li>
         </ul>
       </nav>
@@ -36,19 +36,28 @@
 
     <!--Home-->
     <section class="home_section" id="home">
-      <h2 class="section_title--name">
-        Collin Winstead
-      </h2>
-      <h3 class="section_subtitle">Software Developer</h4>
-      <div class="links">
-        <!--<button class="link" onclick="window.location.href='mailto:collwins@ut.utm.edu'">Email</button>-->
-        <p class="link"><a href="mailto:collwins@ut.utm.edu">Email</a></p>
-        <p class="link"><a href="https://github.com/collwins">GitHub</a></p>
-        <p class="link">
-          <a href="https://www.linkedin.com/in/collin-winstead-6921b6221/"
-            >LinkedIn</a
-          >
-        </p>
+      <div class="home_body">
+        <h2 class="section_title">Hello,</h2>
+        <h2 class="section_title">I Am A</h2>
+        <h2 class="section_title">Software Developer.</h2>
+      </div>
+      <div class="contact_info">
+        <h3 class="contacts_section_name">Contact Me</h3>
+        <div class="links">
+          <!--<button class="link" onclick="window.location.href='mailto:collwins@ut.utm.edu'">Email</button>-->
+          <p class="link">
+            Email: <a href="mailto:collwins@ut.utm.edu">collwins@ut.utm.edu</a>
+          </p>
+          <p class="link">
+            GitHub: <a href="https://github.com/collwins">collwins</a>
+          </p>
+          <p class="link">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/collin-winstead-6921b6221/"
+              >Collin Winstead</a
+            >
+          </p>
+        </div>
       </div>
     </section>
 
@@ -56,12 +65,34 @@
     <section class="about_section" id="about">
       <h2 class="section_title--about">About Me</h2>
       <div class="about_container">
-        <div class="body">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
-            quos, ratione ipsam omnis eius cumque ex earum aspernatur velit
-            officia asperiores ducimus, dolore quasi, dignissimos distinctio
-            quidem non ad tempora!
+        <div class="about_topic">
+          <h3 class="section_subtitle">Background</h3>
+          <p class="paragraph">
+            I am from the small town of Dresden, Tennessee. My interests are in
+            gaming and web development, so I would like my career to be in those
+            fields. My current objective is to gain experience in the field of
+            web developmnent and learn many new skills along the way.
+          </p>
+        </div>
+
+        <div class="about_topic">
+          <h3 class="section_subtitle">Education</h3>
+          <p class="paragraph">
+            In 2019, I graduated from Dresden High School with honors in the top
+            15 of my class. I am currently studying Computer Science at the
+            University of Tennessee at Martin, and I expect to graduate in May
+            2022.
+          </p>
+        </div>
+
+        <div class="about_topic">
+          <h3 class="section_subtitle">Achievements</h3>
+          <p class="paragraph">
+            I graduated from high school as a Tennessee Scholar. I am a
+            co-author of a published abstract of the "Learning Algorithms on the
+            Web" project below. I was elected as the Treasurer for the student
+            chapter of the University of Tennessee at Martin ACM Club. I was a
+            member of the National Beta Club from middle school to high school.
           </p>
         </div>
       </div>
@@ -71,21 +102,75 @@
     <section class="projects_section" id="projects">
       <h2 class="section_title--projects">Projects</h2>
       <div class="projects_list">
-        <div class="project_item"></div>
-        <div class="project_item"></div>
-        <div class="project_item"></div>
+        <div class="project_item">
+          <div class="algorithms_project">
+            <h3 class="section_subtitle">Learning Algorithms on the Web</h3>
+            <p class="paragraph">
+              This was my senior design (or capstone) project. My partner and I
+              presented this project at the ACM Midsoutheast Conference in
+              Gatlinbutg, Tennessee on November 11-12, 2021. I created and
+              managed the back end of this web app. This mostly involved sending
+              http requests to an Express.js server that connected to a MongoDB
+              database. I also implemented a user code feature that allows users
+              to write their own implementations of algorithms and upload their
+              files to our cloud database. The user would then be able to
+              download their files whenever and wherever they wanted. This app
+              was structured with the MERN stack, so I learned a lot about full
+              stack web development from this project. Click here to visit the
+              website:
+              <a href="iendly-nobel-219a5e.netlify.app/">Link</a>
+            </p>
+          </div>
+          <img src="../uploads/login.png" />
+        </div>
+        <div class="project_item">
+          <div class="gravity_project">
+            <h3 class="section_subtitle">Cosmological Gravity Simulator</h3>
+            <p class="paragraph">
+              This was my term project for my Computer Graphics class. As the
+              project's name implies, this simulator demonstrates gravity on the
+              cosmological scale. The project uses actual values for the masses
+              of planets and distances between them, but on a smaller scale. The
+              project also uses actual physics equations like the gravitation
+              equation to make the simulator as accurate as possible. I wrote
+              this program using Three.js, which I really enjoyed using. In the
+              screenshot to the right, you can see the Sun and Earth in
+              Three.js.
+              <!--<a href="iendly-nobel-219a5e.netlify.app/">Link</a>-->
+            </p>
+          </div>
+          <img src="../uploads/gravity_simulator.png" />
+        </div>
+        <div class="project_item">
+          <div class="blackjack_project">
+            <h3 class="section_subtitle">GambleMania</h3>
+            <p class="paragraph">
+              This was my term project for my Software Engineering class. This
+              app currently allows you to play blackjack with the app's own
+              currency (real currency is not needed). This project is not yet
+              complete, which is why the UI looks the way it does. Originally,
+              the app was supposed to implement three different casino games,
+              but my partner and I only had time to make one. We wrote this
+              program in C# using the Visual Studio IDE. The app uses a
+              Microsoft Access database to store user credentials and balances.
+              User credentials are hashed and salted to keep them as secure as
+              possible. One of the main purposes for this project was to get
+              practice with implementing design patterns into a project. In this
+              project, I implemented the Factory Method and Facade design
+              patterns. I used the Factory Method to create cards to use in the
+              game, and Facade to make playing the game easier for the user.
+              <!--<a href="iendly-nobel-219a5e.netlify.app/">Link</a>-->
+            </p>
+          </div>
+          <img src="../uploads/gamble.PNG" />
+        </div>
       </div>
     </section>
 
     <!--Resume-->
     <section class="resume_section" id="resume">
       <h2 class="section_title--resume">Resume</h2>
-      <div class="resume_container">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quos
-        consectetur commodi maxime non quod, quis enim fugit sint dolor
-        laboriosam molestiae sit nesciunt eos dicta labore sunt in dignissimos.
-        <!--Put file viewer here-->
-      </div>
+      <iframe src="../uploads/Winstead_Collin_Resume.pdf"></iframe>
     </section>
   </body>
 </html>
