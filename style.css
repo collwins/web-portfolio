@@ -132,6 +132,25 @@ img {
 
 /* Home Section */
 
+.self {
+  padding-top: 2rem;
+  width: 50%;
+  height: 50%;
+  margin-left: 18.5rem;
+  background: var(--clr-light);
+}
+
+.self-container {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 60%;
+  background: var(--clr-dark);
+  border-radius: 20px;
+}
+
 a:link {
   text-decoration: none;
   color: currentColor;
@@ -149,10 +168,10 @@ a:active {
 
 .home_section {
   display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
   background: var(--clr-dark);
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 20px;
   border-style: solid;
   width: 60%;
   margin-left: 20%;
